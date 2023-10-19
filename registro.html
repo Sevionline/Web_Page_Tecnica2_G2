@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilo personalizado para el marco del formulario */
+        .register-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #28a745; /* Borde verde */
+            border-radius: 20px; /* Puntas redondeadas */
+            background-color: #fff;
+        }
+
+        /* Estilo personalizado para los botones */
+        .btn-register {
+            background-color: #28a745; /* Verde */
+            color: #fff;
+        }
+
+        .btn-cancelar {
+            background-color: #dc3545; /* Rojo */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="register-form">
+            <h2 class="mb-4">Registro</h2>
+            <form action="procesar_registro.php" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="correo" name="correo" required placeholder="Correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" required placeholder="Contraseña">
+                </div>
+                <div class="d-flex justify-content-center"> <!-- Centrar los botones -->
+                    <button type="submit" class="btn btn-register"></a>Registrarse</button>
+                    <button type="reset" class="btn btn-cancelar ml-2">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const registroForm = document.getElementById("registro-form");
+
+            registroForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                // Puedes agregar aquí la lógica para enviar los datos del formulario al servidor para el registro.
+                // Por ejemplo, puedes utilizar la función fetch() para enviar una solicitud POST al servidor.
+                // Si el registro es exitoso, puedes redirigir al usuario a la página de inicio.
+                // Aquí, mostraremos una alerta para fines de demostración.
+                alert("Registro exitoso. Redirigiendo...");
+            });
+        });
+    </script>
+</body>
+</html>
