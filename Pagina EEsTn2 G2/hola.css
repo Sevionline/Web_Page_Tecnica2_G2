@@ -1,0 +1,46 @@
+.navbar {
+    background-color: red;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #f90000; /* Color inicial */
+    }
+    50% {
+        background-color: #5ac71c; /* Color de transición (puede personalizarlo) */
+    }
+    100% {
+        background-color: #106b07; /* Color final (puede personalizarlo) */
+    }
+}
+.navbar-with-animation {
+    animation: changeBackgroundColor 4s linear infinite; /* Duración, tiempo de la animación, repetición (puede personalizarlo) */
+}
+
+body {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(9,121,13,1) 21%, rgba(188,36,36,1) 74%, rgba(0,0,0,1) 97%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(9,121,13,1) 21%, rgba(188,36,36,1) 74%, rgba(0,0,0,1) 97%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(9,121,13,1) 21%, rgba(188,36,36,1) 74%, rgba(0,0,0,1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+}
+a {
+    color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.card-title-button:hover {
+    background-color: #333; /* Cambiar a un color más oscuro cuando se pasa el ratón */
+    color: #fff; /* Cambiar el color del texto a blanco */
+    transition: background-color 0.3s; /* Agregar una transición suave */
+  }
+
+  .btn {
+  text-decoration: none; /* Elimina la línea inferior (subrayado) en todos los botones */
+}
+
+.no-underline {
+    text-decoration: none; /* Elimina la línea inferior (subrayado) en botones con la clase 'no-underline' */
+  }
